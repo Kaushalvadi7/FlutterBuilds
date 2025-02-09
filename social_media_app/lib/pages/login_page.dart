@@ -35,7 +35,7 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 50),
 
               //Email Textfeild
-              MyTextfield(hintText: "Enter Your Email",
+              MyTextfield(hintText: "Enter Your User Name 0r Email",
                   obscureText: false,
                   controller: emailController,
               ),
