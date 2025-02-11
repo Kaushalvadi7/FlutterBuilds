@@ -91,12 +91,11 @@ Each directory in this repository contains a **self-contained Flutter implementa
 
 1️⃣ **Clone the Repository**  
    
-   git clone https://github.com/Kaushalvadi7/flutter-widgets-in-depth.git
-
+   git clone https://github.com/Kaushalvadi7/FlutterBuilds.git
 
 2️⃣ **Navigate to the Project Directory**
    
-   git clone https://github.com/Kaushalvadi7/flutter-widgets-in-depth.git
+   git clone https://github.com/Kaushalvadi7/FlutterBuilds.git
 
 3️⃣ **Install Dependencies**
 
