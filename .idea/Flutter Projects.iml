@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/basic_widget_properties_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/basic_widget_properties_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/basic_widget_properties_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/complex_layout_example1_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/complex_layout_example1_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/complex_layout_example1_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/demo_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/demo_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/demo_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/global_sm_using_provider/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/global_sm_using_provider/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/global_sm_using_provider/build" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/build" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/build" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_app/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_hive_db/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_hive_db/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/habit_tracker_hive_db/build" />
+      <excludeFolder url="file://$MODULE_DIR$/instagram_layout_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/instagram_layout_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/instagram_layout_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/layout_example1_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/layout_example1_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/layout_example1_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/local_state_management/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/local_state_management/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/local_state_management/build" />
+      <excludeFolder url="file://$MODULE_DIR$/long_press_dragable_example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/long_press_dragable_example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/long_press_dragable_example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/profile_page_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/profile_page_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/profile_page_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/responsive_layout_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/responsive_layout_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/responsive_layout_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/riverpod_state_management/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/riverpod_state_management/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/riverpod_state_management/build" />
+      <excludeFolder url="file://$MODULE_DIR$/sliver_appbar/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/sliver_appbar/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/sliver_appbar/build" />
+      <excludeFolder url="file://$MODULE_DIR$/social_media_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/social_media_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/social_media_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/state_management_using_provider/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/state_management_using_provider/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/state_management_using_provider/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
