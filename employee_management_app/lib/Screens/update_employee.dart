@@ -63,6 +63,7 @@ class updateEmployeeState extends State<updateEmployee> {
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
         title: Text('Update Employee'),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),

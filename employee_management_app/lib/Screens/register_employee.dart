@@ -49,7 +49,11 @@ class _RegisterEmployeeState extends State<RegisterEmployee> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Register Employee")),
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+
+        title: Text("Register Employee"),
+      ),
       body: Form(
         child: Padding(
           padding: EdgeInsets.all(minimumPadding * 2),

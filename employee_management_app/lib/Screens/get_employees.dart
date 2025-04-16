@@ -41,8 +41,9 @@ class _GetAllEmployeesState extends State<GetEmployees> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: new AppBar(
-        title: new Text("All Employees Details"),
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: Text("All Employees Details"),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -53,31 +54,46 @@ class _GetAllEmployeesState extends State<GetEmployees> {
           },
         ),
       ),
-      body: Container(
+      body: Padding(
+        padding: const EdgeInsets.all(10.0),
         child: FutureBuilder(
           future: getEmployees(),
           builder: (BuildContext context, AsyncSnapshot snapshot) {
             if (snapshot.data == null) {
-              return Container(child: Center(child: Icon(Icons.error)));
+              return Center(
+                child: Icon(Icons.error, size: 50, color: Colors.red),
+              );
             }
             return ListView.builder(
               itemCount: snapshot.data.length,
               itemBuilder: (BuildContext context, int index) {
-                return ListTile(
-                  title: Text('ID' + ' ' + 'First Name' + ' ' + 'Last Name'),
-                  subtitle: Text(
-                    '${snapshot.data[index].id}' +
-                        '${snapshot.data[index].firstName}' +
-                        '${snapshot.data[index].lastName}',
+                final employee = snapshot.data[index];
+                return Card(
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => DetailPage(snapshot.data[index]),
-                      ),
-                    );
-                  },
+                  margin: EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                  child: ListTile(
+                    contentPadding: EdgeInsets.all(12),
+                    title: Text(
+                      'ID: ${employee.id}',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Text(
+                      'Name: ${employee.firstName} ${employee.lastName}',
+                      style: TextStyle(fontSize: 16),
+                    ),
+                    trailing: Icon(Icons.arrow_forward_ios),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DetailPage(employee),
+                        ),
+                      );
+                    },
+                  ),
                 );
               },
             );
@@ -89,7 +105,7 @@ class _GetAllEmployeesState extends State<GetEmployees> {
 }
 
 class DetailPage extends StatelessWidget {
-  EmployeeModel employee;
+  final EmployeeModel employee;
 
   DetailPage(this.employee);
 
@@ -107,8 +123,9 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(employee.firstName),
-        actions: <Widget>[
+        title: Text('${employee.firstName}\'s Profile'),
+        backgroundColor: Colors.blue,
+        actions: [
           IconButton(
             icon: Icon(Icons.edit, color: Colors.white),
             onPressed: () {
@@ -122,17 +139,39 @@ class DetailPage extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(
-        child: Text(
-          'FirstName' +
-              ' ' +
-              employee.firstName +
-              ' ' +
-              'LastName' +
-              employee.lastName,
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Card(
+          elevation: 4,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Employee Details",
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: 16),
+                Text(
+                  "First Name: ${employee.firstName}",
+                  style: TextStyle(fontSize: 18),
+                ),
+                SizedBox(height: 8),
+                Text(
+                  "Last Name: ${employee.lastName}",
+                  style: TextStyle(fontSize: 18),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.redAccent,
         onPressed: () {
           deleteEmployee1(employee);
           Navigator.push(
@@ -141,7 +180,6 @@ class DetailPage extends StatelessWidget {
           );
         },
         child: Icon(Icons.delete),
-        backgroundColor: Colors.pink,
       ),
     );
   }
